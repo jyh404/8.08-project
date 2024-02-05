@@ -17,6 +17,8 @@ as in [here](https://arxiv.org/pdf/cond-mat/9902170.pdf), so we can directly che
 
 For higher $v_m$, we seek to only recreate the observation/theory that flow will instead be maximized at smaller $c$. This is seen in NS-v_ms.png.
 
+Two simulation videos can be found in NS-10-0.5-1-0.5.mp4 and NS-100-0.5-1-0.5.mp4.
+
 Links to some general sources and other ideas I considered:
 - [General LWR Model](https://sboyles.github.io/teaching/ce392d/5-lwrmodel.pdf)
 - [General LWR Model 2](https://mtreiber.de/Vkmod_Skript/Lecture06_Macro_LWR.pdf)

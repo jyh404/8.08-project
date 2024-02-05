@@ -96,7 +96,7 @@ def simulate(c, v_m, p, t = 100, video = False):
     # make video from saved frames
     if video:
         subprocess.call(
-            ['ffmpeg', '-framerate', '8', '-i', 'sim%04d.png', '-r', '30', '-pix_fmt', 'yuv420p', f'NS-{N}-{c}-{v_m}-{p}.mp4']
+            ['ffmpeg', '-framerate', '8', '-i', 'sim%04d.png', '-r', '30', '-pix_fmt', 'yuv420p', f'videos/NS-{N}-{c}-{v_m}-{p}.mp4']
         )
         for file_name in glob.glob("sim*.png"):
             os.remove(file_name)
@@ -121,7 +121,7 @@ def graph_1(p):
     plt.xlabel('density (c)')
     plt.ylabel('flow (f)')
     plt.legend(loc='best')
-    plt.savefig(f"NS-v_m={v_m}-p={p}.png")
+    plt.savefig(f"images/NS-v_m={v_m}-p={p}.png")
     plt.close()
 
 def graph_2():
@@ -138,7 +138,7 @@ def graph_2():
     plt.xlabel('density (c)')
     plt.ylabel('flow (f)')
     plt.legend(loc='best')
-    plt.savefig(f"NS-v_ms.png")
+    plt.savefig(f"images/NS-v_ms.png")
     plt.close()
 
 # Test the functions above:
