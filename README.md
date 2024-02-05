@@ -12,9 +12,7 @@ Notice that $v_j$ is an integer.
 From what I understand, for $v_m > 1$, the dynamics of the system are not fully solved and has only been approximated. To match my results against theory, we look at $f(c)$, the average current across the system at steady-state as a function of $c$, the density of particles in the system.
 
 In the simple case of the simple case of $v_m = 1$, the system is essentially TASEP with parallel update, which can be solved to give
-$$
-    f(c) = \frac{1}{2} \left(1 - \sqrt{1 - 4(1-p)c(1-c)}\right)
-$$
+$$f(c) = \frac{1}{2} \left(1 - \sqrt{1 - 4(1-p)c(1-c)}\right)$$
 as in [here](https://arxiv.org/pdf/cond-mat/9902170.pdf), so we can directly check against this curve. This is seen in files NS-v_m=1-p=0.3.png and NS-v_m=1-p=0.5.png.
 
 For higher $v_m$, we seek to only recreate the observation/theory that flow will instead be maximized at smaller $c$. This is seen in NS-v_ms.png.
